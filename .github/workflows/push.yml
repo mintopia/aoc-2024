@@ -8,6 +8,6 @@ jobs:
       - name: File Permissions
         run: sudo chown -R 1000:1000 .
       - name: Build
-        run: docker-compose run --rm composer install --ansi
+        run: docker compose run --rm composer install --ansi
       - name: Run
-        run: docker-compose run --rm aoc all --ansi --test
+        run: docker compose run --rm aoc all --ansi --test
